@@ -10,6 +10,8 @@ Clean the Windows-specific dependencies:
 ```conda env export -n llmatic --no-builds 
 | findstr /v /r "^prefix:" | findstr /v "vc" | findstr /v "vs2015_runtime" | findstr /v "wincertstore" | findstr /v "pywin32" > environment-clean.yml```
 
+Next, add `fvcore` manually as a dependency.
+
 ### To run experiments:
 
 Clone this repository:
